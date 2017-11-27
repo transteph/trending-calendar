@@ -1,0 +1,1020 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400,700|Roboto+Slab|Pacifico);
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    background-color: black;
+    margin: 0 auto;
+    background-image:url(../images/home-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+a{
+    text-decoration: none;
+}
+#triangle-isosceles {
+    display: block;
+    margin:0 auto;
+    padding: 10px;
+    color: white;
+    width: 10em;
+    background: rgb(255, 112, 0);
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto Slab';
+    font-size: 300%;
+    padding:20px 25px;
+    color: white;
+    text-align: left;
+    margin-bottom: 1px;
+    margin-top:100px;
+}
+#triangle-isosceles:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    /* value = - border-top-width - border-bottom-width */
+    left: 70px;
+    /* controls horizontal position */
+    border-width: 20px 20px 0;
+    /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    border-color: rgb(255, 112, 0) transparent;
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+#home{
+    max-width: 80%;
+    height:90%;
+    margin:0 auto;
+    color: white;
+}
+#home-text{
+    margin:0 auto;
+    max-width:70%;
+    
+}
+#home h3{
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1;
+    width:90%;
+    font-size:280%;
+    margin-top:8vh;
+    text-shadow: 2px 2px 5px #343434;
+}
+#home p{
+    width:60%;
+    font-size: 135%;
+    line-height: 1.2;
+    margin-top:20px;
+    text-shadow: 2px 2px 6px #343434;
+}
+
+.slide{
+    width: 100%;
+    height:100%;
+    overflow:hidden;
+    position: relative;
+}
+h2 {
+    position: absolute;
+    top:10px;
+    display: block;
+    width:100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Pacifico';
+    font-size: 450%;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.78);
+    z-index: 5000;
+}
+#dec h2,
+#jul h2{
+    top:10px;
+}
+#jul table,
+#dec table,
+#apr table{
+      -webkit-transform: translateY(30px);
+     -ms-transform: translateY(30px);
+    transform: translateY(30px);
+}
+#show-button,#hide-button{display:none;}
+
+nav{
+ position: fixed;
+    bottom:10px;
+    z-index: 7777;
+    width:100%;
+    padding-top:5px;
+    padding-bottom: 5px;
+    text-align: center;
+
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.26); 
+}
+
+nav #menu li{
+    display: inline-block;
+        
+}
+nav #menu li a{
+    font-family: 'Raleway';
+    color: white;
+         -webkit-transform:rotate(-15deg);
+     -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+table {
+	margin:0 auto;
+    width:80%;
+}
+tr {
+    border-color: none;
+}
+.dates td {
+    text-align: right;
+    font-size:12px;
+    vertical-align: right;
+    padding: 2px;
+    height: 11vh;
+    min-width:8vw;
+    max-width:25vw;
+    position: relative;
+    overflow: visible;
+    background-color: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(203, 203, 203, 0.28);
+    
+}
+.dates td:hover {
+    background-color: rgba(132, 255, 255, 0.63);
+    /* making the hover changes smoother */
+     -webkit-transition:all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.dates .grey-dates:hover {
+    background-color: rgba(255, 255, 255, 0.67);
+    -webkit-transition:all 0.6s ease;
+    transition: all 0.5s ease;
+}
+.dates .holidays:hover {
+    font-size: 140%;
+    height: 15vh;
+    width: 16vw;
+     -webkit-transition:all .1s;
+    transition: all .1s ;
+}
+.dates .holidays:hover .holiday:nth-child(1){
+    margin-top:10px;
+}
+.dates .holidays:hover .holiday{
+    margin-top:5px;
+}
+.dates .holidays:hover .three-holidays:nth-child(1){
+    margin-top:0px;
+}
+.dates .holidays:hover .three-holidays{
+	-webkit-transform: translateX(-20px) rotate(-15deg);
+    -ms-transform: translateX(-20px) rotate(-15deg);
+    transform: translateX(-20px) rotate(-15deg);
+	overflow: visible;
+}
+.dates .holidays:hover .holiday,
+.dates .holidays:hover .three-holidays {
+    display: block;
+    padding: 1px;
+    text-align: center;
+    background-color: #de2875;
+    overflow:visible;
+    color: white;
+}
+.sun,.mon,.tue,.wed,.thu,.fri,.sat,.sun {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60%;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(87, 87, 87, 0.84);
+    overflow: hidden;
+    padding: 8px 0px;
+}
+.grey-dates {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: grey;
+}
+
+/* text of holiday label */
+.holiday {
+    text-align: left;
+    color: #de2875;
+    font-weight: 700;
+    padding-top:5px;
+    font-size: 90%;
+    /* make letters that dont fit into cell go onto next line */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-transform: rotate(-15deg) translate(-2px, 0px);
+    transform: rotate(-15deg) translate(-2px, 0px);
+}
+.holiday:nth-child(1){
+	margin-top:10px;
+}
+
+/*  styling cells with 3 or more holidays */
+
+.three-holidays {
+    text-align: left;
+	font-weight: 700;
+    color: #de2875;
+    /* make letters that dont fit into cell go onto next line */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-transform: rotate(-15deg) translate(-2px, -5px);
+    transform: rotate(-15deg) translate(-2px, -5px);
+}
+.three-holidays:nth-child(1){
+	margin-top:10px;
+}
+
+.dates li {
+    display: none;
+}
+/* backgrounds */
+#jan {
+    background-image: url('../images/jan-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#feb {
+    background-image: url('../images/feb-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#mar {
+    background-image: url('../images/mar-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#apr {
+    background-image: url('../images/april-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#may-month{
+    background-image: url('../images/may-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#jun {
+    background-image: url('../images/jun-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#jul {
+    background-image: url('../images/july-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#aug {
+    background-image: url('../images/aug-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#sep {
+    background-image: url('../images/sept-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#oct {
+    background-image: url('../images/october-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#nov {
+    background-image: url('../images/nov-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#dec {
+    background-image: url('../images/dec-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* hover animations */
+/* Float Shadow animation */
+
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+
+.hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(center ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+}
+
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+
+/* float animation for nav bar */
+
+
+/* Float */
+
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+
+/* Underline From Center */
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: rgba(18, 168, 168, 0.65);
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+i{
+    display: none!important;
+}
+
+/* --------------------- MEDIA QUERIES ------------------ */
+
+
+@media only screen and (max-width: 780px) {
+    body{
+        font-size: 14px;
+    }
+    #home h3, #home p{
+        width:80%;
+    }
+    i{
+        display: block !important;
+    }
+    #triangle-isosceles {
+    padding:30px 20px;
+        font-size:7vw;
+    text-align: left;
+    margin-bottom: 1px;
+    margin-top:100px;
+}
+	nav{
+		width:0;
+	}
+    nav ul,#hide-button{
+        display: none;
+    }
+    #show-button{
+        display: block;
+        color: white;
+        display: inline-block;
+        font-size: 250%;
+        position: fixed;
+        right:0;
+        top:0;
+        padding:4px;
+    }
+    .fa-circle{
+        font-size: 200%;
+        color:rgb(18, 168, 168);
+    }
+	h2{
+		    font-size: 400%;
+		margin-top:10px;
+	}
+    
+#nav:target #show-button{
+        display: none;
+    }
+#nav:target #hide-button{
+         display: block;
+        color: white;
+        display: inline-block;
+        font-size: 250%;
+        position: fixed;
+        right:0;
+        top:0;
+        padding:4px;
+    z-index: 5000;
+    text-shadow: 2px 2px  2px#de2875;
+    }	
+#nav:target ul{
+        display: block;
+        position: fixed;
+        top:0px;
+        right:0;
+        width:50%;
+        height:100%;
+        color: black;
+        background-color: white;
+        padding-top:0px;
+        z-index: 4000;
+    }
+
+#nav:target ul li{
+        padding-left:20px;
+        margin-top:1px;
+	    width:90%;
+        display: block;
+        z-index: 8878;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+#nav:target ul li a{
+    color: black;
+    padding:10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width:80%;
+    margin:0 auto;
+    letter-spacing: 5px;
+}
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: none;
+    -webkit-transform:none;
+    transform: none;
+    box-shadow: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: none;
+    height: 4px;
+    -webkit-transition-property:none;
+    transition-property: none;
+    -webkit-transition-duration: none;
+    transition-duration: none;
+    -webkit-transition-timing-function: none;
+    transition-timing-function: none;
+}
+
+tr {
+    border-color: none;
+}
+.dates td {
+    text-align: right;
+    font-size:12px;
+    vertical-align: right;
+    padding: 2px;
+    height: 11vh;
+    min-width:10vw;
+    max-width:11vw;
+    position: relative;
+    overflow: visible;
+    background-color: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(203, 203, 203, 0.28);
+}
+    /* text of holiday label */
+.holiday {
+    text-align: left;
+    color: rgb(212, 0, 114);
+    padding-top:5px;
+    letter-spacing: 1px;
+    font-size: 100%;
+    background-color: rgb(216, 246, 250);
+    overflow: visible;
+    -webkit-transform: rotate(-15deg) translate(-2px, 0px);
+    transform: rotate(-15deg) translate(-20px, 0px);
+    z-index: 8000;
+    position: absolute;
+}
+
+	.three-holidays{
+		 background-color: rgb(216, 246, 250);
+    overflow: visible;
+		position: absolute;
+		z-index: 9200;
+	}
+	.three-holidays:nth-child(1){
+		margin-top:-10px;
+	}
+	.three-holidays:nth-child(2){
+		margin-top:10px;
+	}
+	.three-holidays:nth-child(3){
+		margin-top:35px;
+	}
+    .dates .holidays:active{
+    font-size: 100%;
+    height: 15vh;
+    width: 25vw;
+         background-color: rgba(212, 0, 114, 0.85);
+     -webkit-transition:all .1s;
+    transition: all .1s ;
+}
+.fp-controlArrow {
+    margin-top:39vh;
+    z-index: 4;
+    bottom: 0px !important;
+    cursor: pointer;
+}
+.dates td:hover {
+    background-color:none;
+     -webkit-transition:none;
+    transition: none;
+}
+.dates .grey-dates:hover {
+    background-color: none;
+    -webkit-transition:none;
+    transition: none;
+}
+.dates td:nth-child(7) .holiday{
+		 -webkit-transform: translateX(-40px) rotate(-15deg);
+    transform: translateX(-40px) rotate(-15deg);
+	}
+	.dates td:nth-child(1) .holiday{
+		 -webkit-transform: translateX(-30px) rotate(-15deg);
+        transform: translateX(-40px) rotate(-15deg);
+	}
+	.holiday:nth-child(1){
+	margin-top:15px;
+}
+.dates .holidays:hover {
+    font-size: 100%;
+    color: none;
+    height: 0;
+    width: 0;
+     -webkit-transition:none;
+    transition: none;
+}
+.dates .holidays:hover .holiday{
+    margin-top:0px;
+}
+.dates .holidays:hover .three-holidays:nth-child(1){
+    margin-top:0px;
+}
+.dates .holidays:hover .three-holidays{
+    margin-top:0px;
+}
+.dates .holidays:hover .holiday,
+.dates .holidays:hover .three-holidays {
+    display: block;
+    padding: 0px;
+    text-align: none;
+    background-color: none;
+    overflow:visible;
+    color: none;
+}
+    
+.fp-controlArrow.fp-prev {
+    left: 5px;
+    width: 0;
+    border-width: 25px 34px 25px 0;
+    border-color: transparent rgba(255, 255, 255, 0.79) transparent transparent;
+       -webkit-transition:all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.fp-controlArrow.fp-next {
+    right: 5px;
+    border-width: 25px 0 25px 34px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.79);
+       -webkit-transition:all 0.5s ease;
+    transition: all 0.5s ease;
+}
+    .fp-controlArrow.fp-prev:active{
+        border-color: transparent rgba(11, 191, 157, 0.79) transparent transparent;
+    }
+    .fp-controlArrow.fp-next:active{
+          border-color: transparent transparent transparent rgba(11, 191, 157, 0.79);
+    }
+    
+} /*   end smaller screen media query   */
+
+@media only screen and (min-width: 1100px)  and (min-height: 1000px) {
+    
+    #triangle-isosceles {
+    display: block;
+    margin:0 auto;
+    color: white;
+    width: 10em;
+    background: rgb(255, 112, 0);
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto Slab';
+    font-size: 500%;
+    padding:50px 35px;
+    color: white;
+    text-align: left;
+    margin-bottom: 1px;
+    margin-top:300px;
+}
+#triangle-isosceles:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    /* value = - border-top-width - border-bottom-width */
+    left: 70px;
+    /* controls horizontal position */
+    border-width: 20px 20px 0;
+    /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    border-color: rgb(255, 112, 0) transparent;
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+    
+    h2{
+		    font-size: 700%;
+		margin-top:10px;
+	}
+    
+    #home-text{
+    margin:0 auto;
+    max-width:70%;
+    
+}
+#home h3{
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1;
+    width:90%;
+    font-size:400%;
+    margin-top:11vh;
+    text-shadow: 2px 2px 5px #343434;
+}
+#home p{
+    width:80%;
+    font-size: 200%;
+    line-height: 1.2;
+    margin-top:20px;
+    text-shadow: 2px 2px 6px #343434;
+}
+    
+    nav #menu li a{
+    font-family: 'Raleway';
+        font-size: 1.6vw;
+        padding-right:10px;
+    color: white;
+         -webkit-transform:rotate(-15deg);
+     -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+    
+} /*   end larger screen media query   */
+/* Desktop screen, large height */
+
+@media only screen and (min-width: 780px)  and (min-height: 1000px) {
+       
+    h2{
+		    font-size: 700%;
+		margin-top:10px;
+	}
+     table{
+      -webkit-transform: translateY(-70px);
+     -ms-transform: translateY(-70px);
+    transform: translateY(-70px);
+}
+    nav{
+        padding:20px 0;
+        margin-bottom: 30px;
+    }
+        
+    nav #menu li a{
+    font-family: 'Raleway';
+        font-size: 1.7vw;
+        padding-right:10px;
+    color: white;
+         -webkit-transform:rotate(-15deg);
+     -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+    
+    
+    
+}
+
+
+/*    ANIMATIONS   */
+
+
+/* fade in*/
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: .5s;
+}
+
+
+/*fade out left*/
+
+@-webkit-keyframes fadeOutRight {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+.fadeOutRight {
+    -webkit-animation-name: fadeOutRight !important;
+    animation-name: fadeOutRight !important;
+    -webkit-animation-duration: 0.5s !important;
+    animation-duration: 0.5s !important;
+    -webkit-animation-timing-function: linear;
+    /* Chrome, Safari, Opera */
+    animation-timing-function: linear;
+}
+
+
+/*fade in up animation*/
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2000px, 0);
+        transform: translate3d(0, 2000px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+
+
+/*icon fonts*/
+@font-face {
+  font-family: "menu";
+  src:url("../fonts/menu.eot");
+  src:url("../fonts/menu.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/menu.woff") format("woff"),
+    url("../fonts/menu.ttf") format("truetype"),
+    url("../fonts/menu.svg#menu") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "menu" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "menu" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\63";
+}
+.icon-hamburger:before {
+  content: "\68";
+}
+
+
