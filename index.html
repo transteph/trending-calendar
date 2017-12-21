@@ -12,49 +12,6 @@
 	<script src="js/html5shiv.min.js"></script>
     <![endif]-->
         <!-- javascript to hide the home page content when clicking on other pages -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-    	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script src="js/script.js"></script>
-
-<script type="text/javascript">
-		$(document).ready(function() {
-            
-            $(window).resize(function(){location.reload();});
-            
-			$('#fullpage').fullpage({
-				anchors: ['firstPage'],
-				sectionsColor: ['transparent'],
-				autoScrolling: false,
-				css3: true,
-				fitToSection: false
-			});
-            
-            if( window.innerWidth > 600 ){
-                $("i" ).hide();
-                
-            } else {
-                
-                $( ".holidays" ).append( ' <i class="fa fa-circle"></i> ' );
-                $( ".holiday" ).hide();
-                $( ".three-holidays" ).hide();
-            };
-            
-              $( ".holidays" ).click(function(){
-                if( window.innerWidth > 600 ){
-                } else {
-                $( this ).find(".holiday").show().css("width", "24vw");
-                $( this ).find(".three-holidays").show().css("width", "23vw");
-                $( this ).find(".fa-circle").hide();
-                
-                } 
-            });
-        
-        });
-             
-           
-	</script>
 </head>
 
 <body>
@@ -63,18 +20,18 @@
              <a class="icon-hamburger" id="show-button" href="#nav"><span>&nbsp;</span></a>
             <a class="icon-close" id="hide-button" href="#"><span>&nbsp;</span></a>
             <ul id="menu">
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/january">January</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/february">February</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/march">March</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/april">April</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/may">May</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/june">June</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/july">July</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/august">August</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/september">September</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/october">October</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/november">November</a></li>
-                        <li><a class="hvr-underline-from-center" href="http://calendar.stephanietran.ca/#firstPage/december">December</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/january">January</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/february">February</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/march">March</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/april">April</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/may">May</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/june">June</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/july">July</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/august">August</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/september">September</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/october">October</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/november">November</a></li>
+                        <li><a class="hvr-underline-from-center" href="/#firstPage/december">December</a></li>
             </ul>
         </nav>
 
@@ -116,7 +73,7 @@
                     <td class="holidays">
                         <p class="holiday-date">1</p>
                         <p class="holiday">
-                        <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=&#9839;NewYears&dates=20170101/20170101&details=#NewYears&location&trp=false&sprop=&sprop=name:" target="_blank" rel="nofollow">#NewYears</a></p>
+                       #NewYears</p>
 
                     </td>
                     <td>2</td>
@@ -1076,5 +1033,15 @@
 	</div>
 </div>
     </main>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script defer="true"
+    src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+    integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+    crossorigin="anonymous"></script>
+    <script defer="true" type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script defer="true" src="js/script.js"></script>
 </body>
 </html>
