@@ -3,1045 +3,1073 @@
 
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
-    	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" href="css/st-calendarstyle.css" />
-<link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
     <!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
     <![endif]-->
-        <!-- javascript to hide the home page content when clicking on other pages -->
+    <!-- javascript to hide the home page content when clicking on other pages -->
 </head>
 
 <body>
     <main>
         <nav id="nav">
-             <a class="icon-hamburger" id="show-button" href="#nav"><span>&nbsp;</span></a>
-            <a class="icon-close" id="hide-button" href="#"><span>&nbsp;</span></a>
+            <a class="icon-hamburger" id="show-button" href="#nav">
+                <span>&nbsp;</span>
+            </a>
+            <a class="icon-close" id="hide-button" href="#">
+                <span>&nbsp;</span>
+            </a>
             <ul id="menu">
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/january">January</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/february">February</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/march">March</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/april">April</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/may">May</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/june">June</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/july">July</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/august">August</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/september">September</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/october">October</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/november">November</a></li>
-                        <li><a class="hvr-underline-from-center" href="/#firstPage/december">December</a></li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/january">January</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/february">February</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/march">March</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/april">April</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/may">May</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/june">June</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/july">July</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/august">August</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/september">September</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/october">October</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/november">November</a>
+                </li>
+                <li>
+                    <a class="hvr-underline-from-center" href="/#firstPage/december">December</a>
+                </li>
             </ul>
         </nav>
 
-<div id="fullpage">
+        <div id="fullpage">
 
-	<div class="section" id="section0">
-    
-	    <div class="slide month" data-anchor="intro" id="home">
-            <article class="homepage" id="home">
-             <!-- floating orange bubble -->
-        <div class="hvr-float-shadow" id="triangle-isosceles">
-            <h1>&hearts;#TrendingCalendar</h1>
-        </div>
-           <div id="home-text">
-            <h3>Optimize your social media channels.</h3>
-            <p>
-                Consistent content creation can be difficult without some inspiration. Use these hashtags to inspire your future posts and get your brand onto popular media feeds.
-                </p>
+            <div class="section" id="section0">
+
+                <div class="slide month" data-anchor="intro" id="home">
+                    <article class="homepage" id="home">
+                        <!-- floating orange bubble -->
+                        <div class="hvr-float-shadow" id="triangle-isosceles">
+                            <h1>&hearts;#TrendingCalendar</h1>
+                        </div>
+                        <div id="home-text">
+                            <h3>Optimize your social media channels.</h3>
+                            <p>
+                                Consistent content creation can be difficult without some inspiration. Use these hashtags to inspire your future posts and
+                                get your brand onto popular media feeds.
+                            </p>
+                        </div>
+                    </article>
+
                 </div>
-        </article>
-       
-        </div>
-	
-	
-		<div class="slide month" data-anchor="january" id="jan">
-			<!-- January -->
-            <h2 class="hvr-float">January 2017</h2>
-            <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr> 
-                <tr class="dates">
-                    <td class="holidays">
-                        <p class="holiday-date">1</p>
-                        <p class="holiday">
-                       #NewYears</p>
 
-                    </td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr class="dates">
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">
-                        <p class="holiday-date">15</p>
-                        <p class="holiday">#WikipediaDay</p>
-                    
-                    </td>
-                    <td class="holidays">
-                        <p class="holiday-date">16</p>
-                        <p class="holiday">#MLKJrDay</p>
-                    </td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                    <td class="holidays">
-                        <p class="holiday-date">21</p>
-                        <p class="holiday">#NationalHugDay</p>
-                        <div class="description">
-                            <ul class="holidayhover">
-                                <li>Hug a cat!</li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td class="holidays">28
-                        <p class="holiday">#ChineseNewYear</p>
-                        <div class="description">
-                            <ul class="holidayhover">
-                                <li>Happy year of the Rooster!</li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td>29</td>
-                    <td>30</td>
-                    <td>31</td>
-                    <td class="grey-dates">1</td>
-                    <td class="grey-dates">2</td>
-                    <td class="grey-dates">3</td>
-                    <td class="grey-dates">4</td>
-                </tr>
-            </table>
-		</div>
-		<div class="slide month" data-anchor="february" id="feb">
-		 <!-- February -->
-            <h2 class="hvr-float">February 2017</h2>
-            <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                    </tr>
-                <tr class="dates">
-                    <td class="grey-dates">29</td>
-                    <td class="grey-dates">30</td>
-                    <td class="grey-dates">31</td>
-                    <td>1</td>
-                    <td class="holidays">2
-                        <p class="holiday">#GroundhogDay</p>
-                    </td>
-                    <td>3</td>
-                    <td>4</td>
-                </tr>
-                <tr class="dates">
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">
-                        <p class="holiday-date">12</p>
-                        <p class="holiday">#DarwinDay</p>
-                        <td class="holidays">
-                            <p class="holiday-date">13</p>
-                            <p class="holiday">#WorldRadioDay</p>
+
+                <div class="slide month" data-anchor="january" id="jan">
+                    <!-- January -->
+                    <h2 class="hvr-float">January 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">
+                                <p class="holiday-date">1</p>
+                                <p class="holiday">
+                                    #NewYears</p>
+
+                            </td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">
+                                <p class="holiday-date">15</p>
+                                <p class="holiday">#WikipediaDay</p>
+
+                            </td>
+                            <td class="holidays">
+                                <p class="holiday-date">16</p>
+                                <p class="holiday">#MLKJrDay</p>
+                            </td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td class="holidays">
+                                <p class="holiday-date">21</p>
+                                <p class="holiday">#NationalHugDay</p>
+                                <div class="description">
+                                    <ul class="holidayhover">
+                                        <li>Hug a cat!</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="dates">
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td class="holidays">28
+                                <p class="holiday">#ChineseNewYear</p>
+                                <div class="description">
+                                    <ul class="holidayhover">
+                                        <li>Happy year of the Rooster!</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="dates">
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="grey-dates">1</td>
+                            <td class="grey-dates">2</td>
+                            <td class="grey-dates">3</td>
+                            <td class="grey-dates">4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="slide month" data-anchor="february" id="feb">
+                    <!-- February -->
+                    <h2 class="hvr-float">February 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="grey-dates">29</td>
+                            <td class="grey-dates">30</td>
+                            <td class="grey-dates">31</td>
+                            <td>1</td>
+                            <td class="holidays">2
+                                <p class="holiday">#GroundhogDay</p>
+                            </td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">
+                                <p class="holiday-date">12</p>
+                                <p class="holiday">#DarwinDay</p>
+                                <td class="holidays">
+                                    <p class="holiday-date">13</p>
+                                    <p class="holiday">#WorldRadioDay</p>
+                                    <td class="holidays">14
+                                        <p class="holiday">#ValentinesDay</p>
+                                    </td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">19
+                                <p class="holiday">#NBAAllStar</p>
+                            </td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">26
+                                <p class="holiday">#Oscars</p>
+                            </td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td class="grey-dates">1</td>
+                            <td class="grey-dates">2</td>
+                            <td class="grey-dates">3</td>
+                            <td class="grey-dates">4</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="slide month" data-anchor="march" id="mar">
+                    <!-- March -->
+
+                    <h2 class="hvr-float">March 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="grey-dates">26</td>
+                            <td class="grey-dates">27</td>
+                            <td class="grey-dates">28</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td class="holidays">3
+                                <p class="holiday">#DrSeussDay</p>
+                            </td>
+                            <td>4</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td class="holidays">8
+                                <p class="holiday">#IntlWomensDay</p>
+                            </td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>12</td>
+                            <td>13</td>
                             <td class="holidays">14
-                                <p class="holiday">#ValentinesDay</p>
+                                <p class="holiday">#PiDay</p>
+                            </td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td class="holidays">17
+                                <p class="holiday">#StPattysDay</p>
+                            </td>
+                            <td class="holidays">18
+                                <p class="holiday">#WorldSleepDay</p>
+                            </td>
+                        </tr>
+                        <tr class="dates">
+                            <td>19</td>
+                            <td class="holidays">20
+                                <p class="holiday">#IntlDayofHappiness</p>
+                            </td>
+                            <td class="holidays">21
+                                <p class="holiday">#Norooz (Persian New Year)</p>
+                            </td>
+                            <td class="holidays">22
+                                <p class="holiday">#WorldWaterDay</p>
+                            </td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>26</td>
+                            <td>27</td>
+                            <td class="holidays">28
+                                <p class="holiday">#HinduNewYear</p>
+                            </td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="grey-dates">1</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="slide month" data-anchor="april" id="apr">
+                    <!-- April -->
+
+                    <h2 class="hvr-float">April 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                            <tr class="dates">
+                                <td class="grey-dates">26</td>
+                                <td class="grey-dates">27</td>
+                                <td class="grey-dates">28</td>
+                                <td class="grey-dates">29</td>
+                                <td class="grey-dates">30</td>
+                                <td class="grey-dates">31</td>
+                                <td class="holidays">1
+                                    <p class="holiday">#AprilFoolsDay</p>
+                                </td>
+                            </tr>
+                            <tr class="dates">
+                                <td class="holidays">2
+                                    <p class="holiday">#IntlChildrensBookDay</p>
+                                </td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td class="holidays">7
+                                    <p class="holiday">#WorldHealthDay</p>
+                                </td>
+                                <td>8</td>
+                            </tr>
+                            <tr class="dates">
+                                <td class="holidays">9
+                                    <p class="holiday">#VimyRidgeDay</p>
+                                    <div class="description">
+                                        <ul class="holidayhover">
+                                            <li>100th year anniversary of the historic battle!</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td class="holidays">14
+                                    <p class="holiday">#GoodFriday</p>
+                                </td>
+                                <td>15</td>
+                            </tr>
+                            <tr class="dates">
+                                <td class="holidays">16
+                                    <p class="holiday">#EasterSunday</p>
+                                </td>
+                                <td class="holidays">17
+                                    <p class="holiday">#EasterMonday</p>
+                                </td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td class="holidays">22
+                                    <p class="holiday">#EarthDay</p>
+                                </td>
+                            </tr>
+                            <tr class="dates">
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td class="holidays">29
+                                    <p class="holiday">#IntlDanceDay</p>
+                                </td>
+                            </tr>
+                            <tr class="dates">
+                                <td class="holidays">30
+                                    <p class="holiday">#IntlJazzDay</p>
+                                </td>
+                                <td class="grey-dates">1</td>
+                                <td class="grey-dates">2</td>
+                                <td class="grey-dates">3</td>
+                                <td class="grey-dates">4</td>
+                                <td class="grey-dates">5</td>
+                                <td class="grey-dates">6</td>
+                            </tr>
+                    </table>
+
+                </div>
+                <div class="slide month" data-anchor="may" id="may-month">
+                    <!-- May -->
+
+                    <h2 class="hvr-float">May 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="grey-dates">30</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="holidays">4
+                                <p class="holiday">#StarWarsDay</p>
+                            </td>
+                            <td>5</td>
+                            <td>6</td>
+
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">7
+                                <p class="holiday">#WorldLaughterDay</p>
+                            </td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td class="holidays">12
+                                <p class="holiday">#IntlNursesDay</p>
+                            </td>
+                            <td>13</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">14
+                                <p class="holiday">#MothersDay</p>
                             </td>
                             <td>15</td>
                             <td>16</td>
                             <td>17</td>
                             <td>18</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">19
-                        <p class="holiday">#NBAAllStar</p>
-                    </td>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">26
-                        <p class="holiday">#Oscars</p>
-                    </td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td class="grey-dates">1</td>
-                    <td class="grey-dates">2</td>
-                    <td class="grey-dates">3</td>
-                    <td class="grey-dates">4</td>
-                </tr>
-            </table>
-		</div>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>21</td>
+                            <td class="holidays">22
+                                <p class="holiday">#VictoriaDay</p>
+                            </td>
+                            <td class="holidays">23
+                                <p class="holiday">#WorldTurtleDay</p>
+                            </td>
+                            <td>24</td>
+                            <td class="holidays">25
+                                <p class="holiday">#GeekPrideDay</p>
+                            </td>
+                            <td>26</td>
+                            <td class="holidays">27
+                                <p class="holiday">#Ramadan</p>
+                            </td>
+                        </tr>
+                        <tr class="dates">
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="grey-dates">1</td>
+                            <td class="grey-dates">2</td>
+                            <td class="grey-dates">3</td>
+                        </tr>
+                    </table>
+                </div>
 
-		<div class="slide month" data-anchor="march" id="mar">
-		 <!-- March -->
-		 
-            <h2 class="hvr-float">March 2017</h2>
-			<table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr>
-                <tr class="dates">
-                    <td class="grey-dates">26</td>
-                    <td class="grey-dates">27</td>
-                    <td class="grey-dates">28</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td class="holidays">3
-                        <p class="holiday">#DrSeussDay</p>
-                    </td>
-                    <td>4</td>
-                </tr>
-                <tr class="dates">
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td class="holidays">8
-                        <p class="holiday">#IntlWomensDay</p>
-                    </td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                </tr>
-                <tr class="dates">
-                    <td>12</td>
-                    <td>13</td>
-                    <td class="holidays">14
-                        <p class="holiday">#PiDay</p>
-                    </td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td class="holidays">17
-                        <p class="holiday">#StPattysDay</p>
-                    </td>
-                    <td class="holidays">18
-                        <p class="holiday">#WorldSleepDay</p>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td>19</td>
-                    <td class="holidays">20
-                        <p class="holiday">#IntlDayofHappiness</p>
-                    </td>
-                    <td class="holidays">21
-                        <p class="holiday">#Norooz (Persian New Year)</p>
-                    </td>
-                    <td class="holidays">22
-                        <p class="holiday">#WorldWaterDay</p>
-                    </td>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                </tr>
-                <tr class="dates">
-                    <td>26</td>
-                    <td>27</td>
-                    <td class="holidays">28
-                        <p class="holiday">#HinduNewYear</p>
-                    </td>
-                    <td>29</td>
-                    <td>30</td>
-                    <td>31</td>
-                    <td class="grey-dates">1</td>
-                </tr>
-            </table>
-		</div>
-		<div class="slide month" data-anchor="april" id="apr">
-		<!-- April -->
-      
-            <h2 class="hvr-float">April 2017</h2>
-       <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                <tr class="dates">
-                    <td class="grey-dates">26</td>
-                    <td class="grey-dates">27</td>
-                    <td class="grey-dates">28</td>
-                    <td class="grey-dates">29</td>
-                    <td class="grey-dates">30</td>
-                    <td class="grey-dates">31</td>
-                    <td class="holidays">1
-                        <p class="holiday">#AprilFoolsDay</p>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">2
-                        <p class="holiday">#IntlChildrensBookDay</p>
-                    </td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td class="holidays">7
-                        <p class="holiday">#WorldHealthDay</p>
-                    </td>
-                    <td>8</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">9
-                        <p class="holiday">#VimyRidgeDay</p>
-                        <div class="description">
-                            <ul class="holidayhover">
-                                <li>100th year anniversary of the historic battle!</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td class="holidays">14
-                        <p class="holiday">#GoodFriday</p>
-                    </td>
-                    <td>15</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">16
-                        <p class="holiday">#EasterSunday</p>
-                    </td>
-                    <td class="holidays">17
-                        <p class="holiday">#EasterMonday</p>
-                    </td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                    <td>21</td>
-                    <td class="holidays">22
-                        <p class="holiday">#EarthDay</p>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td class="holidays">29
-                        <p class="holiday">#IntlDanceDay</p>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">30
-                        <p class="holiday">#IntlJazzDay</p>
-                    </td>
-                    <td class="grey-dates">1</td>
-                    <td class="grey-dates">2</td>
-                    <td class="grey-dates">3</td>
-                    <td class="grey-dates">4</td>
-                    <td class="grey-dates">5</td>
-                    <td class="grey-dates">6</td>
-                </tr>
-            </table>
-       
-        </div>
-        <div class="slide month" data-anchor="may" id="may-month">
-		<!-- May -->
-      
-            <h2 class="hvr-float">May 2017</h2>
-       <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr>
-                <tr class="dates">
-                    <td class="grey-dates">30</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td class="holidays">4
-                        <p class="holiday">#StarWarsDay</p>
-                    </td>
-                    <td>5</td>
-                    <td>6</td>
+                <div class="slide month" data-anchor="june" id="jun">
+                    <!-- June -->
 
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">7
-                        <p class="holiday">#WorldLaughterDay</p>
-                    </td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td class="holidays">12
-                        <p class="holiday">#IntlNursesDay</p>
-                    </td>
-                    <td>13</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">14
-                        <p class="holiday">#MothersDay</p>
-                    </td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                </tr>
-                <tr class="dates">
-                    <td>21</td>
-                    <td class="holidays">22
-                        <p class="holiday">#VictoriaDay</p>
-                    </td>
-                    <td class="holidays">23
-                        <p class="holiday">#WorldTurtleDay</p>
-                    </td>
-                    <td>24</td>
-                    <td class="holidays">25
-                        <p class="holiday">#GeekPrideDay</p>
-                    </td>
-                    <td>26</td>
-                    <td class="holidays">27
-                        <p class="holiday">#Ramadan</p>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                    <td>31</td>
-                    <td class="grey-dates">1</td>
-                    <td class="grey-dates">2</td>
-                    <td class="grey-dates">3</td>
-                </tr>
-            </table>
-        </div>
-        
-        <div class="slide month" data-anchor="june" id="jun">
-		<!-- June -->
-      
-            <h2 class="hvr-float">June 2017</h2>
-       <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr>
-                <tr class="dates">
-                    <td class="grey-dates">28</td>
-                    <td class="grey-dates">29</td>
-                    <td class="grey-dates">30</td>
-                    <td class="grey-dates">31</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
+                    <h2 class="hvr-float">June 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="grey-dates">28</td>
+                            <td class="grey-dates">29</td>
+                            <td class="grey-dates">30</td>
+                            <td class="grey-dates">31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
 
-                </tr>
-                <tr class="dates">
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td class="holidays">8
-                        <p class="holiday">#WorldOceansDay</p>
-                    </td>
-                    <td>9</td>
-                    <td>10</td>
-                </tr>
-                <tr class="dates">
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                </tr>
-                <tr class="dates">
-                    <td>18</td>
-                    <td>19</td>
-                    <td class="holidays">20
-                        <p class="holiday">#WorldRefugeeDay</p>
-                    </td>
-                    <td class="holidays">21
-                        <p class="three-holidays">#NationalAboriginalDay</p>
-                        <p class="three-holidays">#FathersDay</p>
-                        <p class="three-holidays">#IntlYogaDay</p>
-                    </td>
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
-                </tr>
-                <tr class="dates">
-                    <td>25</td>
-                    <td class="holidays">26
-                        <p class="holiday">Eid-alFitr</p>
-                    </td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                    <td class="grey-dates">1</td>
-                </tr>
-            </table>
-       
+                        </tr>
+                        <tr class="dates">
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td class="holidays">8
+                                <p class="holiday">#WorldOceansDay</p>
+                            </td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>18</td>
+                            <td>19</td>
+                            <td class="holidays">20
+                                <p class="holiday">#WorldRefugeeDay</p>
+                            </td>
+                            <td class="holidays">21
+                                <p class="three-holidays">#NationalAboriginalDay</p>
+                                <p class="three-holidays">#FathersDay</p>
+                                <p class="three-holidays">#IntlYogaDay</p>
+                            </td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>25</td>
+                            <td class="holidays">26
+                                <p class="holiday">Eid-alFitr</p>
+                            </td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td class="grey-dates">1</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="slide month" data-anchor="july" id="jul">
+                    <!-- July -->
+
+                    <h2 class="hvr-float">July 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="grey-dates">25</td>
+                            <td class="grey-dates">26</td>
+                            <td class="grey-dates">27</td>
+                            <td class="grey-dates">28</td>
+                            <td class="grey-dates">29</td>
+                            <td class="grey-dates">30</td>
+                            <td class="holidays">1
+                                <p class="holiday">#CanadaDay</p>
+                            </td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">2
+                                <p class="holiday">#WorldUFODay</p>
+                            </td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td class="holidays">12
+                                <p class="holiday">#MalalaDay</p>
+                            </td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>16</td>
+                            <td>17</td>
+                            <td class="holidays">18
+                                <p class="holiday">#MandelaDay</p>
+                            </td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="grey-dates">1</td>
+                            <td class="grey-dates">2</td>
+                            <td class="grey-dates">3</td>
+                            <td class="grey-dates">4</td>
+                            <td class="grey-dates">5</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="slide month" data-anchor="august" id="aug">
+                    <!-- August -->
+
+                    <h2 class="hvr-float">August 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="grey-dates">30</td>
+                            <td class="grey-dates">31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="holidays">4
+                                <p class="holiday">#IntlBeerDay</p>
+                            </td>
+                            <td>5</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">6
+                                <p class="holiday">#FriendshipDay</p>
+                            </td>
+                            <td class="holidays">7
+                                <p class="holiday">#CivicHoliday</p>
+                            </td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td class="holidays">12
+                                <p class="holiday">#IntlYouthDay</p>
+                            </td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">13
+                                <p class="holiday">#LefthandersDay</p>
+                            </td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td class="holidays">26
+                                <p class="holiday">#WomensEqualityDay</p>
+                            </td>
+                        </tr>
+                        <tr class="dates">
+                            <td>27</td>
+                            <td>28</td>
+                            <td class="holidays">29
+                                <p class="holiday">#NationalSportsDay</p>
+                            </td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="grey-dates">1</td>
+                            <td class="grey-dates">2</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="slide month" data-anchor="september" id="sep">
+                    <!-- September -->
+
+                    <h2 class="hvr-float">September 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="grey-dates">27</td>
+                            <td class="grey-dates">28</td>
+                            <td class="grey-dates">29</td>
+                            <td class="grey-dates">30</td>
+                            <td class="grey-dates">31</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>3</td>
+                            <td class="holidays">4
+                                <p class="holiday">#LabourDay</p>
+                                <p class="holiday">#BeyDay</p>
+                            </td>
+                            <td class="holidays">5
+                                <p class="holiday">#GivingTuesday</p>
+                            </td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td class="holidays">15
+                                <p class="holiday">#IntlDayofDemocracy</p>
+                            </td>
+                            <td>16</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">17
+                                <p class="holiday">#TerryFoxRun</p>
+                            </td>
+                            <td>18</td>
+                            <td class="holidays">19
+                                <p class="holiday">#TalkLikeaPirateDay</p>
+                            </td>
+                            <td>20</td>
+                            <td class="holidays">21
+                                <p class="holiday">#RoshHashanah</p>
+                                <p class="holiday">#IntlDayofPeace</p>
+                            </td>
+                            <td class="holidays">22
+                                <p class="holiday">#HijiriNewYear (Islamic New Year)</p>
+                            </td>
+                            <td>23</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td class="holidays">27
+                                <p class="holiday">#WorldTourismDay</p>
+                            </td>
+                            <td>28</td>
+                            <td class="holidays">29
+                                <p class="holiday">#WorldHeartDay</p>
+                            </td>
+                            <td class="holidays">30
+                                <p class="holiday">#YomKippur</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="slide month" data-anchor="october" id="oct">
+                    <!-- October -->
+
+                    <h2 class="hvr-float">October 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">1
+                                <p class="holiday">#IntlCoffeeDay</p>
+                                <p class="holiday">#WorldVegetarianDay</p>
+                            </td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td class="holidays">5
+                                <p class="holiday">#WorldTeachersDay</p>
+                            </td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>8</td>
+                            <td class="holidays">9
+                                <p class="holiday">#ThanksgivingDay</p>
+                            </td>
+                            <td class="holidays">10
+                                <p class="holiday">#WorldMentalHealthDay</p>
+                            </td>
+                            <td class="holidays">11
+                                <p class="holiday">#IntlDayoftheGirl</p>
+                            </td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>15</td>
+                            <td class="holidays">16
+                                <p class="holiday">#WorldFoodDay</p>
+                            </td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td class="holidays">19
+                                <p class="holiday">#Diwali</p>
+                            </td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>22</td>
+                            <td>23</td>
+                            <td class="holidays">24
+                                <p class="holiday">#UNDay</p>
+                                <p class="holiday">#HappyBirthdayDrake</p>
+                            </td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>29</td>
+                            <td>30</td>
+                            <td class="holidays">31
+                                <p class="holiday">#Halloween</p>
+                            </td>
+                            <td class="grey-dates">1</td>
+                            <td class="grey-dates">2</td>
+                            <td class="grey-dates">3</td>
+                            <td class="grey-dates">4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="slide month" data-anchor="november" id="nov">
+                    <!-- November -->
+
+                    <h2 class="hvr-float">November 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="grey-dates">29</td>
+                            <td class="grey-dates">30</td>
+                            <td class="grey-dates">31</td>
+                            <td class="holidays">1
+                                <p class="holiday">#WorldVeganDay</p>
+                            </td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">5
+                                <p class="holiday">#GuyFawkesNight</p>
+                            </td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td class="holidays">11
+                                <p class="holiday">#RemembranceDay</p>
+                            </td>
+                        </tr>
+                        <tr class="dates">
+                            <td>12</td>
+                            <td class="holidays">13
+                                <p class="holiday">#WorldKindnessDay</p>
+                            </td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">19
+
+                                <p class="holiday">#WorldToiletDay</p>
+                            </td>
+                            <td class="holidays">20
+                                <p class="holiday">#UniversalChildrensDay</p>
+                            </td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td class="holidays">23
+                                <p class="holiday">#Thanksgiving</p>
+                            </td>
+                            <td>24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td class="grey-dates">1</td>
+                            <td class="grey-dates">2</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="slide month" data-anchor="december" id="dec">
+                    <!-- December -->
+
+                    <h2 class="hvr-float">December 2017</h2>
+                    <table>
+                        <tr class="weekday-labels">
+                            <td class="sun">Sunday</td>
+                            <td class="mon">Monday</td>
+                            <td class="tue">Tuesday</td>
+                            <td class="wed">Wednesday</td>
+                            <td class="thu">Thursday</td>
+                            <td class="fri">Friday</td>
+                            <td class="sat">Saturday</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="grey-dates">26</td>
+                            <td class="grey-dates">27</td>
+                            <td class="grey-dates">28</td>
+                            <td class="grey-dates">29</td>
+                            <td class="grey-dates">30</td>
+                            <td class="holidays">1
+                                <p class="holiday">#WorldAIDSday</p>
+                            </td>
+                            <td>2</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>3</td>
+                            <td>4</td>
+                            <td class="holidays">5
+                                <p class="holiday">#IntlVolunteerDay</p>
+                            </td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">10
+                                <p class="holiday">#HumanRightsDay</p>
+                                <p class="holiday">#Write4Rights</p>
+                            </td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td class="holidays">13
+                                <p class="holiday">#Hanukkah</p>
+                            </td>
+                            <td>14</td>
+                            <td class="holidays">15
+                                <p class="holiday">#IntlTeaDay</p>
+                            </td>
+                            <td>16</td>
+                        </tr>
+                        <tr class="dates">
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">24
+                                <p class="holiday">#ChristmasEve</p>
+                            </td>
+                            <td class="holidays">25
+                                <p class="holiday">#Christmas</p>
+                            </td>
+                            <td class="holidays">6
+                                <p class="holiday">#BoxingDay</p>
+                                <p class="holiday">#Kwanzaa</p>
+                            </td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                        </tr>
+                        <tr class="dates">
+                            <td class="holidays">31
+                                <p class="holiday">#NYE</p>
+                            </td>
+                            <td class="grey-dates">1</td>
+                            <td class="grey-dates">2</td>
+                            <td class="grey-dates">3</td>
+                            <td class="grey-dates">4</td>
+                            <td class="grey-dates">5</td>
+                            <td class="grey-dates">6</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
-        
-        <div class="slide month" data-anchor="july" id="jul">
-		 <!-- July -->
-      
-            <h2 class="hvr-float">July 2017</h2>
-       <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr>
-                <tr class="dates">
-                    <td class="grey-dates">25</td>
-                    <td class="grey-dates">26</td>
-                    <td class="grey-dates">27</td>
-                    <td class="grey-dates">28</td>
-                    <td class="grey-dates">29</td>
-                    <td class="grey-dates">30</td>
-                    <td class="holidays">1
-                        <p class="holiday">#CanadaDay</p>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">2
-                        <p class="holiday">#WorldUFODay</p>
-                    </td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                </tr>
-                <tr class="dates">
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td class="holidays">12
-                        <p class="holiday">#MalalaDay</p>
-                    </td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                </tr>
-                <tr class="dates">
-                    <td>16</td>
-                    <td>17</td>
-                    <td class="holidays">18
-                        <p class="holiday">#MandelaDay</p>
-                    </td>
-                    <td>19</td>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                </tr>
-                <tr class="dates">
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                </tr>
-                <tr class="dates">
-                    <td>30</td>
-                    <td>31</td>
-                    <td class="grey-dates">1</td>
-                    <td class="grey-dates">2</td>
-                    <td class="grey-dates">3</td>
-                    <td class="grey-dates">4</td>
-                    <td class="grey-dates">5</td>
-                </tr>
-            </table>
-       
-        </div>
-        <div class="slide month" data-anchor="august" id="aug">
-		<!-- August -->
-      
-            <h2 class="hvr-float">August 2017</h2>
-       <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr>
-                <tr class="dates">
-                    <td class="grey-dates">30</td>
-                    <td class="grey-dates">31</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td class="holidays">4
-                        <p class="holiday">#IntlBeerDay</p>
-                    </td>
-                    <td>5</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">6
-                        <p class="holiday">#FriendshipDay</p>
-                    </td>
-                    <td class="holidays">7
-                        <p class="holiday">#CivicHoliday</p>
-                    </td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td class="holidays">12
-                        <p class="holiday">#IntlYouthDay</p>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">13
-                        <p class="holiday">#LefthandersDay</p>
-                    </td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                </tr>
-                <tr class="dates">
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td class="holidays">26
-                        <p class="holiday">#WomensEqualityDay</p>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td>27</td>
-                    <td>28</td>
-                    <td class="holidays">29
-                        <p class="holiday">#NationalSportsDay</p>
-                    </td>
-                    <td>30</td>
-                    <td>31</td>
-                    <td class="grey-dates">1</td>
-                    <td class="grey-dates">2</td>
-                </tr>
-            </table>
-       
-        </div>
-        <div class="slide month" data-anchor="september" id="sep">
-		<!-- September -->
-       
-            <h2 class="hvr-float">September 2017</h2>
-        <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr>
-                <tr class="dates">
-                    <td class="grey-dates">27</td>
-                    <td class="grey-dates">28</td>
-                    <td class="grey-dates">29</td>
-                    <td class="grey-dates">30</td>
-                    <td class="grey-dates">31</td>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-                <tr class="dates">
-                    <td>3</td>
-                    <td class="holidays">4
-                        <p class="holiday">#LabourDay</p>
-                        <p class="holiday">#BeyDay</p>
-                    </td>
-                    <td class="holidays">5
-                        <p class="holiday">#GivingTuesday</p>
-                    </td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                </tr>
-                <tr class="dates">
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td class="holidays">15
-                        <p class="holiday">#IntlDayofDemocracy</p>
-                    </td>
-                    <td>16</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">17
-                        <p class="holiday">#TerryFoxRun</p>
-                    </td>
-                    <td>18</td>
-                    <td class="holidays">19
-                        <p class="holiday">#TalkLikeaPirateDay</p>
-                    </td>
-                    <td>20</td>
-                    <td class="holidays">21
-                        <p class="holiday">#RoshHashanah</p>
-                        <p class="holiday">#IntlDayofPeace</p>
-                    </td>
-                    <td class="holidays">22
-                        <p class="holiday">#HijiriNewYear (Islamic New Year)</p>
-                    </td>
-                    <td>23</td>
-                </tr>
-                <tr class="dates">
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td class="holidays">27
-                        <p class="holiday">#WorldTourismDay</p>
-                    </td>
-                    <td>28</td>
-                    <td class="holidays">29
-                        <p class="holiday">#WorldHeartDay</p>
-                    </td>
-                    <td class="holidays">30
-                        <p class="holiday">#YomKippur</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="slide month" data-anchor="october" id="oct">
-		<!-- October -->
-      
-            <h2 class="hvr-float">October 2017</h2>
-       <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">1
-                        <p class="holiday">#IntlCoffeeDay</p>
-                        <p class="holiday">#WorldVegetarianDay</p>
-                    </td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td class="holidays">5
-                        <p class="holiday">#WorldTeachersDay</p>
-                    </td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr class="dates">
-                    <td>8</td>
-                    <td class="holidays">9
-                        <p class="holiday">#ThanksgivingDay</p>
-                    </td>
-                    <td class="holidays">10
-                        <p class="holiday">#WorldMentalHealthDay</p>
-                    </td>
-                    <td class="holidays">11
-                        <p class="holiday">#IntlDayoftheGirl</p>
-                    </td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                </tr>
-                <tr class="dates">
-                    <td>15</td>
-                    <td class="holidays">16
-                        <p class="holiday">#WorldFoodDay</p>
-                    </td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td class="holidays">19
-                        <p class="holiday">#Diwali</p>
-                    </td>
-                    <td>20</td>
-                    <td>21</td>
-                </tr>
-                <tr class="dates">
-                    <td>22</td>
-                    <td>23</td>
-                    <td class="holidays">24
-                        <p class="holiday">#UNDay</p>
-                        <p class="holiday">#HappyBirthdayDrake</p>
-                    </td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                </tr>
-                <tr class="dates">
-                    <td>29</td>
-                    <td>30</td>
-                    <td class="holidays">31
-                        <p class="holiday">#Halloween</p>
-                    </td>
-                    <td class="grey-dates">1</td>
-                    <td class="grey-dates">2</td>
-                    <td class="grey-dates">3</td>
-                    <td class="grey-dates">4</td>
-                </tr>
-            </table>
-        </div>
-        <div class="slide month" data-anchor="november" id="nov">
-		<!-- November -->
-      
-            <h2 class="hvr-float">November 2017</h2>
-       <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr>
-                <tr class="dates">
-                    <td class="grey-dates">29</td>
-                    <td class="grey-dates">30</td>
-                    <td class="grey-dates">31</td>
-                    <td class="holidays">1
-                        <p class="holiday">#WorldVeganDay</p>
-                    </td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">5
-                        <p class="holiday">#GuyFawkesNight</p>
-                    </td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td class="holidays">11
-                        <p class="holiday">#RemembranceDay</p>
-                    </td>
-                </tr>
-                <tr class="dates">
-                    <td>12</td>
-                    <td class="holidays">13
-                        <p class="holiday">#WorldKindnessDay</p>
-                    </td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">19
-                  
-                        <p class="holiday">#WorldToiletDay</p>
-                    </td>
-                    <td class="holidays">20
-                        <p class="holiday">#UniversalChildrensDay</p>
-                    </td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td class="holidays">23
-                        <p class="holiday">#Thanksgiving</p>
-                    </td>
-                    <td>24</td>
-                    <td>25</td>
-                </tr>
-                <tr class="dates">
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                    <td class="grey-dates">1</td>
-                    <td class="grey-dates">2</td>
-                </tr>
-            </table>
-        </div>
-        <div class="slide month" data-anchor="december" id="dec">
-		<!-- December -->
-      
-            <h2 class="hvr-float">December 2017</h2>
-       <table>
-                <tr class="weekday-labels">
-                    <td class="sun">Sunday</td>
-                    <td class="mon">Monday</td>
-                    <td class="tue">Tuesday</td>
-                    <td class="wed">Wednesday</td>
-                    <td class="thu">Thursday</td>
-                    <td class="fri">Friday</td>
-                    <td class="sat">Saturday</td>
-                </tr>
-                <tr class="dates">
-                    <td class="grey-dates">26</td>
-                    <td class="grey-dates">27</td>
-                    <td class="grey-dates">28</td>
-                    <td class="grey-dates">29</td>
-                    <td class="grey-dates">30</td>
-                    <td class="holidays">1
-                        <p class="holiday">#WorldAIDSday</p>
-                    </td>
-                    <td>2</td>
-                </tr>
-                <tr class="dates">
-                    <td>3</td>
-                    <td>4</td>
-                    <td class="holidays">5
-                        <p class="holiday">#IntlVolunteerDay</p>
-                    </td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">10
-                        <p class="holiday">#HumanRightsDay</p>
-                        <p class="holiday">#Write4Rights</p>
-                    </td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td class="holidays">13
-                        <p class="holiday">#Hanukkah</p>
-                    </td>
-                    <td>14</td>
-                    <td class="holidays">15
-                        <p class="holiday">#IntlTeaDay</p>
-                    </td>
-                    <td>16</td>
-                </tr>
-                <tr class="dates">
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">24
-                        <p class="holiday">#ChristmasEve</p>
-                    </td>
-                    <td class="holidays">25
-                        <p class="holiday">#Christmas</p>
-                    </td>
-                    <td class="holidays">6
-                        <p class="holiday">#BoxingDay</p>
-                        <p class="holiday">#Kwanzaa</p>
-                    </td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                </tr>
-                <tr class="dates">
-                    <td class="holidays">31
-                        <p class="holiday">#NYE</p>
-                    </td>
-                    <td class="grey-dates">1</td>
-                    <td class="grey-dates">2</td>
-                    <td class="grey-dates">3</td>
-                    <td class="grey-dates">4</td>
-                    <td class="grey-dates">5</td>
-                    <td class="grey-dates">6</td>
-                </tr>
-            </table>
-        </div>
-	</div>
-</div>
     </main>
-    <script
-    src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
-    <script defer="true"
-    src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
-    integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script defer="true" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+        crossorigin="anonymous"></script>
     <script defer="true" type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <script defer="true" src="js/script.js"></script>
 </body>
+
 </html>
